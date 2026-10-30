@@ -1,0 +1,43 @@
+{
+	"geode": "v5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.input-buffer",
+	"name": "Input Buffer",
+	"version": "v1.2.0",
+	"developer": "yourname",
+	"description": "Buffers clicks made shortly before landing or touching an orb, and fires them at the right moment. Toggle it from the main menu or pause menu.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"buffer-ground": {
+			"type": "bool",
+			"name": "Buffer landings",
+			"default": true
+		},
+		"buffer-orbs": {
+			"type": "bool",
+			"name": "Buffer orbs",
+			"default": true
+		},
+		"buffer-ms": {
+			"type": "int",
+			"name": "Buffer window (ms)",
+			"description": "How long a click is remembered.",
+			"default": 80,
+			"min": 10,
+			"max": 250,
+			"control": {
+				"slider": true,
+				"input": true
+			}
+		}
+	}
+}
