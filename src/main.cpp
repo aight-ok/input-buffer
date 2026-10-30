@@ -202,8 +202,8 @@ class $modify(BufferGameLayer, GJBaseGameLayer) {
 		GJBaseGameLayer::handleButton(down, button, isPlayer1);
 	}
 
-	void processCommands(float dt) {
-		GJBaseGameLayer::processCommands(dt);
+	void processCommands(float dt, bool isHalfTick, bool isLastTick) {
+		GJBaseGameLayer::processCommands(dt, isHalfTick, isLastTick);
 
 		if (!inPlayLayer() || !Mod::get()->getSettingValue<bool>("enabled")) return;
 
